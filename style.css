@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Exo+2:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.bigcontainer{
+    position: absolute;
+    margin: 6px;
+    border-radius: 10px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 26, 89);
+}
+.container{
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid white;
+    position: relative;
+    background-color: rgb(0, 8, 60);
+}
+.navbar{
+    height: 13%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    color: rgb(250, 26, 89);
+}
+#brace{
+    color: white;
+    font-size: 1.3rem;
+}
+#name{
+    color:rgb(250, 26, 89);
+    font-size: 1.3rem;
+}
+.right{
+    color: white;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 65%;
+    justify-content: flex-start;
+    align-items: center;
+}
+ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 55px ;
+    font-family: 'Alegreya', 'Exo+2', sans-serif;
+    font-size: 1rem;
+    border: 0px solid;
+    padding: 8px 15px;
+}
+ul li:hover{
+    background-color: rgb(31, 37, 75);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.chat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    background-color: rgb(15, 24, 78);
+    padding: 0 28px 0 28px;
+    border: 1px solid  rgb(250, 26, 89);
+    border-radius: 2px;
+}
+.chat:hover{
+    background-color: rgb(40, 48, 92);
+    /* font-size: 1.2rem; */
+    padding: 2px 30px 2px 30px;
+    color: rgb(250, 26, 89);
+    cursor: pointer;
+}
+.main{
+    height: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    color: white;
+    height: 682px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center;  */
+    padding: 0px 100px;
+}
+/* .texts{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center;  */
+    /* padding: 0px 100px; */
+.pic{
+    height: 682px;
+    width: 50%;
+}
