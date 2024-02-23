@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Exo+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap');
 
 *{
     margin: 0;
@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(250, 26, 89);
+    margin: 0;
 }
 .container{
     height: 80%;
@@ -22,6 +23,7 @@
     border: 2px solid white;
     position: relative;
     background-color: rgb(0, 8, 60);
+    margin: 0;
 }
 .navbar{
     height: 13%;
@@ -48,6 +50,7 @@
     font-size: 1.3rem;
 }
 .right{
+    z-index: 10;
     color: white;
     display: flex;
     height: 100%;
@@ -69,6 +72,10 @@ ul li{
     font-size: 1rem;
     border: 0px solid;
     padding: 8px 15px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
 }
 ul li:hover{
     background-color: rgb(31, 37, 75);
@@ -98,24 +105,87 @@ ul li:hover{
     justify-content: center;
     align-items: center;
 }
+.links{
+    width: 5%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 .content{
     color: white;
-    height: 682px;
-    width: 50%;
+    height: 592px;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center;  */
     padding: 0px 100px;
+    font-family: ale;
 }
-/* .texts{
+.texts {
+    height: 180px;
+}
+.content p{
+    font-size: 20px;
+    font-family: "Kode Mono", monospace;
+}
+.texts #brace, .texts #name{
+    font-size: 70px;
+    margin-right: 8px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+}
+#position{
+    font-family: "Kode Mono", monospace;
+    font-size: 22px;
+}
+.btns{
     display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center;  */
-    /* padding: 0px 100px; */
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+.btns .resume{
+    border: 0.6px solid white;
+    padding: 6px 15px;
+    font-size: 22px;
+    border-radius: 5px;
+    background-color: rgb(250, 26, 89);
+}
+.btns .contact{
+    border: 0.6px solid white;
+    padding: 6px 16px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(40, 48, 92);
+}
+.btns .resume:hover , .contact:hover{
+    padding: 7px 17px;
+}
 .pic{
-    height: 682px;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 592px;
+    width: 40%;
+}
+.pic img{
+    /* height: 550px; */
+    width: 492px;
+}
+.email{
+    width: 5%;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-orientation: upright; */
+    writing-mode: vertical-lr;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
