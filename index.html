@@ -12,23 +12,38 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+        <div class="navbar">
             <div class="left">
                 <a href="https://rajkrsingh9.github.io/My_Portfolio/">Raj's Portfolio</a>
             </div>
             <div class="right">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="">Projects</a></li>
+                    <li class="hideOnMobile"><a href="contact.html">Contact Me</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-xl"></i></a>
+                    </li>
+                </ul>
+                <div class="resume hideOnMobile" ><a href="https://drive.google.com/file/d/1YyE8pMIDUJaf-U_YKarkYXLhJl8Nxutx/view?usp=drive_link">My Resume </a></div>
+            </div>
+            
+        </div>
+        <div class="sidebar">
+            <div class="left">
+                <a href="https://rajkrsingh9.github.io/My_Portfolio/">Raj's Portfolio</a>
+                <a onclick=hideSidebar() href="index.html"><i class="fa-solid fa-xmark fa-xl"></i></a>
+
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="">Projects</a></li>
-                    <li><a href="">Contact Me</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
                 </ul>
                 <div class="resume"><a href="https://drive.google.com/file/d/1YyE8pMIDUJaf-U_YKarkYXLhJl8Nxutx/view?usp=drive_link">My Resume </a></div>
             </div>
-        </nav>
-    </header>
+        </div>
+    
     <main>
         <section class="first">
             <div class="leftsection">
@@ -136,6 +151,7 @@
             strings: ['<i>Web Developer</i>.', '<i> JAVA Developer.</i>', '<i>Web Developer &amp; JAVA Developer</i>.'], typeSpeed: 50
         });
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
