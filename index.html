@@ -2,156 +2,1268 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Raj Kumar Singh- Developer </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raj Kumar Singh</title>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/RAJ no bg.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-        <div class="navbar">
-            <div class="left">
-                <a href="https://rajkrsingh9.github.io/My_Portfolio/">Raj's Portfolio</a>
-            </div>
-            <div class="right">
-                <ul>
-                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
-                    <li class="hideOnMobile"><a href="">Projects</a></li>
-                    <li class="hideOnMobile"><a href="contact.html">Contact Me</a></li>
-                    <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-xl"></i></a>
-                    </li>
-                </ul>
-                <div class="resume hideOnMobile" ><a href="https://drive.google.com/file/d/1YyE8pMIDUJaf-U_YKarkYXLhJl8Nxutx/view?usp=drive_link">My Resume </a></div>
-            </div>
-            
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Raj Kumar Singh" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Raj Kumar Singh">Raj Kumar Singh</h1>
+
+          <p class="title">Tech Innovator and Leader</p>
         </div>
-        <div class="sidebar">
-            <div class="left">
-                <a href="https://rajkrsingh9.github.io/My_Portfolio/">Raj's Portfolio</a>
-                <a onclick=hideSidebar() href="index.html"><i class="fa-solid fa-xmark fa-xl"></i></a>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:rajkumarsingh9164@gmail.com.com" class="contact-link">rajkumarsingh9164@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:91 91634 25289" class="contact-link">+91 91634 25289</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2005-02-05">February 05, 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Kolkata, West Bengal, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/rajkrsingh9" class="social-link">
+              <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/be-raj-kumar-singh-" class="social-link">
+              <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://leetcode.com/rajkrsingh9/" class="social-link">
+              <svg width="20" height="18" viewBox="0 0 95 111" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="h-full w-auto max-w-none">
+                <path
+                  d="M68.0063 83.0664C70.5 80.5764 74.5366 80.5829 77.0223 83.0809C79.508 85.579 79.5015 89.6226 77.0078 92.1127L65.9346 103.17C55.7187 113.371 39.06 113.519 28.6718 103.513C28.6117 103.456 23.9861 98.9201 8.72653 83.957C-1.42528 74.0029 -2.43665 58.0749 7.11648 47.8464L24.9282 28.7745C34.4095 18.6219 51.887 17.5122 62.7275 26.2789L78.9048 39.362C81.6444 41.5776 82.0723 45.5985 79.8606 48.3429C77.6488 51.0873 73.635 51.5159 70.8954 49.3003L54.7182 36.2173C49.0488 31.6325 39.1314 32.2622 34.2394 37.5006L16.4274 56.5727C11.7767 61.5522 12.2861 69.574 17.6456 74.8292C28.851 85.8169 37.4869 94.2846 37.4969 94.2942C42.8977 99.496 51.6304 99.4184 56.9331 94.1234L68.0063 83.0664Z"
+                  fill="#FFA116" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M41.1067 72.0014C37.5858 72.0014 34.7314 69.1421 34.7314 65.615C34.7314 62.0879 37.5858 59.2286 41.1067 59.2286H88.1245C91.6454 59.2286 94.4997 62.0879 94.4997 65.615C94.4997 69.1421 91.6454 72.0014 88.1245 72.0014H41.1067Z"
+                  fill="#B3B3B3" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M49.9118 2.02335C52.3173 -0.55232 56.3517 -0.686894 58.9228 1.72277C61.494 4.13244 61.6284 8.17385 59.2229 10.7495L16.4276 56.5729C11.7768 61.552 12.2861 69.5738 17.6453 74.8292L37.4088 94.2091C39.9249 96.6764 39.968 100.72 37.505 103.24C35.042 105.761 31.0056 105.804 28.4895 103.337L8.72593 83.9567C-1.42529 74.0021 -2.43665 58.0741 7.1169 47.8463L49.9118 2.02335Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I’m a passionate Full Stack Developer and Innovator dedicated to crafting intelligent and user-friendly
+            solutions. From designing intuitive websites to developing robust back-end systems, I combine creativity
+            with technical expertise to deliver exceptional results.
+          </p>
+
+          <p>
+            My work is focused on web development and leveraging technologies like Java, APIs, and AI-driven solutions
+            to tackle real-world challenges. Whether I’m building a functional platform, creating smooth user
+            experiences, or solving complex problems, I ensure every detail reflects your vision and identity.
+          </p>
+
+          <p>
+            With experience leading dynamic teams and collaborating across disciplines, I value teamwork and strive to
+            bring out the best in every project. My goal is to create products that are not only visually appealing but
+            also efficient, innovative, and impactful.
+          </p>
+
+          <p>
+            Let’s connect and turn ideas into meaningful solutions that stand out!
+          </p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Developer & Designer</h4>
+
+                <p class="service-item-text">
+                  Crafting scalable and high-performing web applications with stunning visuals and seamless user
+                  experiences.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/cloud.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Architect</h4>
+
+                <p class="service-item-text">
+                  Designing scalable cloud solutions and leading cloud initiatives for real-world applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+
+                <img src="./assets/images/ai.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI and Machine Learning Solutions</h4>
+
+                <p class="service-item-text">
+                  Building intelligent systems with AI and machine learning to tackle real-world challenges.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/webel.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Generative AI for 30 hours</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Certificate of Completion for completing the short certificate course on
+                    Generative Al of 30 hours organized by Webel Fujisoft Vara Centre of Excellence in Industry 4.0.
+
+                    During the course, I demonstrated exceptional skills by developing an innovative project
+                    that utilizes facial emotion recognition technology to provide personalized song recommendations.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+
+
+
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/aicte.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Smart India Hackathon</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I'm thrilled to be a finalist at Smart India Hackathon 2024 with my project NeerVaani - Small
+                    Footprints Big Impact! This recognition validates our innovative solution and motivates us to create
+                    a lasting impact.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+            
+
+
+
+            
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/ardent.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Python With Django</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I've successfully completed the Python with Django learning program organized by ARDENT COMPUTECH
+                    PVT LTD!
+                    As part of the program, I developed a comprehensive Blood Bank Management System called "Rakt
+                    Sahayak". This project aims to streamline blood donation processes and facilitate better management
+                    of blood resources.
+                    Thrilled to have received certification for my accomplishment and eager to continue leveraging
+                    Python and Django to create impactful solutions.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/coursera.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Data Structures</h4>
+                
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Completed an online non-credit course authorized by University of California San Diego through Coursera.
+                    Demonstrated proficiency in fundamental data structures, including arrays, linked lists, stacks, queues, trees, and graphs.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.<time datetime="2021-06-14">14 June, 2021</time>
+                </p>
+              </div>
 
             </div>
-            <div class="right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-                <div class="resume"><a href="https://drive.google.com/file/d/1YyE8pMIDUJaf-U_YKarkYXLhJl8Nxutx/view?usp=drive_link">My Resume </a></div>
-            </div>
+
+          </section>
+
         </div>
-    
-    <main>
-        <section class="first">
-            <div class="leftsection">
-                <p>Hi There</p>
-                <div class="texts">
-                    <span id="brace" style="color: rgb(15, 24, 78);">I'm</span>
-                    <span id="name" style="color: rgb(250, 26, 89);"> Raj Kumar Singh</span>
-                </div>
-                <span id="position" style="color: rgb(15, 24, 78);">I am a </span>
-                <div class="blink">
-                    <span id="element"></span>
-                </div>
-            </div>
-            <div class="rightsection">
-                <img src="RAJ no bg.png" alt="">
-            </div>
+
+
+        <!--
+          - projects
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Projects</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo.png" alt="client logo" style="width: 105px;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-jabari.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/VidyaVista.png" alt="client logo" style="margin-top: 25px;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Apatkalin.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
         </section>
-        <hr>
-        <section class="second">
-            <span class="text-gray"></span>
-            <h1> Past Experience</h1>
-            <div class="box-line">
-                <div class="verticle-line">
-                    <img src="school.png" alt="" class="image-top">
-                    <div class="ver-title">
-                        Class X ICSE <br>(Holy Home School)
-                    </div>
-                    <div class="ver-desc">
-                        (2019-2020) <br>
-                        Score: 91.40% <br> HTML, Computer Science, JAVA.
-                    </div>
-                </div>
-                <div class="verticle-line one">
-                    <img src="school.png" alt="" class="image-top">
-                    <div class="ver-title">
-                        Class XII ISC <br>(Holy Home School)
-                    </div>
-                    <div class="ver-desc">
-                        (2020-2022) <br>
-                        Score: 89% <br> JAVA, Computer Science.
-                    </div>
-                </div>
-                <div class="verticle-line">
-                    <img src="college.png" alt="" class="image-top">
-                    <div class="ver-title">
-                        JAVA Developer
-                    </div>
-                    <div class="ver-desc">
-                        DSA, Collection Framework, Handling exceptions
-                    </div>
-                </div>
-                <div class="verticle-line two">
-                    <img src="school.png" alt="" class="image-top">
-                    <div class="ver-title">
-                        Computer Science Engineering <br>(Bachelor's of Technology)
-                    </div>
-                    <div class="ver-desc">
-                        Guru Nanak Institute of Technology<br>(2022-2026) <br> C, Cpp, Python, JavaScript, react, MySQL
-                        and others.
-                    </div>
-                </div>
-                <div class="verticle-line">
-                    <img src="college.png" alt="" class="image-top">
-                    <div class="ver-title">
-                        Web Developer
-                    </div>
-                    <div class="ver-desc">
-                        Guru Nanak Institute of Technology <br> Practicing Frontend Developement using HTML, CSS,
-                        JavaScript and Backend using react, PHP, MySQL and others.
-                    </div>
-                </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Holy Home School</h4>
+
+              <span>2019 — 2020</span>
+
+              <p class="timeline-text">
+                ICSE - Xth Board Exam || Score: 91.40%.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Holy Home School</h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                ISC - XIIth Board Exam || Score: 89%
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Guru Nanak Institute of Technology</h4>
+
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                B-Tech in Computer Science and Engineering || GPA: 8.87
+              </p>
+
+            </li>
+
+          </ol>
+
         </section>
-        <hr>
-    </main>
-    <footer>
-        <div class="foot-left">
-            <h3>© 2024 Developed By Raj Kumar Singh. All Right Reserved</h3>
-        </div>
-        <div class="foot-right">
-            <a href="https://www.linkedin.com/in/be-raj-kumar-singh-" target="_blank"><i class="fa-brands fa-linkedin fa-lg"
-                    style="color: white;"></i></a>
-            <a href="https://github.com/rajkrsingh9" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: white;"></i></a>
-            <a href="https://rajkrsingh9.github.io/My_Portfolio/" target="_blank"><i class="fa-solid fa-user fa-lg"
-                    style="color: #ffffff;"></i></a>
-            <a href="https://leetcode.com/rajkrsingh9/" target="_blank">
-                <svg width="22" height="30" viewBox="0 0 95 111" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="h-full w-auto max-w-none">
-                    <path
-                        d="M68.0063 83.0664C70.5 80.5764 74.5366 80.5829 77.0223 83.0809C79.508 85.579 79.5015 89.6226 77.0078 92.1127L65.9346 103.17C55.7187 113.371 39.06 113.519 28.6718 103.513C28.6117 103.456 23.9861 98.9201 8.72653 83.957C-1.42528 74.0029 -2.43665 58.0749 7.11648 47.8464L24.9282 28.7745C34.4095 18.6219 51.887 17.5122 62.7275 26.2789L78.9048 39.362C81.6444 41.5776 82.0723 45.5985 79.8606 48.3429C77.6488 51.0873 73.635 51.5159 70.8954 49.3003L54.7182 36.2173C49.0488 31.6325 39.1314 32.2622 34.2394 37.5006L16.4274 56.5727C11.7767 61.5522 12.2861 69.574 17.6456 74.8292C28.851 85.8169 37.4869 94.2846 37.4969 94.2942C42.8977 99.496 51.6304 99.4184 56.9331 94.1234L68.0063 83.0664Z"
-                        fill="#FFA116" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M41.1067 72.0014C37.5858 72.0014 34.7314 69.1421 34.7314 65.615C34.7314 62.0879 37.5858 59.2286 41.1067 59.2286H88.1245C91.6454 59.2286 94.4997 62.0879 94.4997 65.615C94.4997 69.1421 91.6454 72.0014 88.1245 72.0014H41.1067Z"
-                        fill="#B3B3B3" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M49.9118 2.02335C52.3173 -0.55232 56.3517 -0.686894 58.9228 1.72277C61.494 4.13244 61.6284 8.17385 59.2229 10.7495L16.4276 56.5729C11.7768 61.552 12.2861 69.5738 17.6453 74.8292L37.4088 94.2091C39.9249 96.6764 39.968 100.72 37.505 103.24C35.042 105.761 31.0056 105.804 28.4895 103.337L8.72593 83.9567C-1.42529 74.0021 -2.43665 58.0741 7.1169 47.8463L49.9118 2.02335Z"
-                        fill="white" />
-                </svg></a>
-                <a href="https://www.instagram.com/raj_krsingh_/"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['<i>Web Developer</i>.', '<i> JAVA Developer.</i>', '<i>Web Developer &amp; JAVA Developer</i>.'], typeSpeed: 50
-        });
-    </script>
-    <script src="script.js"></script>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Cloud Solutions Lead</h4>
+
+              <span>2024 — Present</span>
+
+              <p class="timeline-text">
+                Spearheaded cloud-related initiatives, organized workshops, and guided peers in cloud computing
+                technologies and applications, fostering innovation and collaboration within the coding club.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Smart India Hackathon</h4>
+
+              <span>2024 </span>
+
+              <p class="timeline-text">
+                Recognized for innovative solutions in a National tech hackathon as Finalist of SIH 2024.
+              </p>
+
+            </li>
+
+
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web development</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Cloud Computing</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java Script Frameworks</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Django</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Database</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/neerDashboard.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">NeerVaani</h3>
+
+                <p class="project-category">Small Footprints Big Impact</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/JABARI.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">JABARI</h3>
+
+                <p class="project-category">Shaping the future of Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/apaatkalin.jpeg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Apaatkaalin</h3>
+
+                <p class="project-category">Emergency Vehicle Traffic Clearance System</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/vidyavistahome.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Vidya Vista</h3>
+
+                <p class="project-category">Centralised Space for students endevours</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mausam.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mausam Mitra</h3>
+
+                <p class="project-category">Weather Monitoring Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a
+                href="https://www.linkedin.com/posts/be-raj-kumar-singh-_sih-smartindiahackathon-sihfinalists-activity-7276918379041435648-GGuE?utm_source=share&utm_medium=member_desktop">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/hackathonBlog.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Dream. Innovate. Achieve</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Dec 22nd, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The Ultimate QNA Session on Hackathons</h3>
+
+                  <p class="blog-text">
+                    A Q&A session with as Cloud Lead of B2B and finalists of the Smart India Hackathon 2024.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://www.linkedin.com/posts/be-raj-kumar-singh-_we-are-team-the-cache-crew-participating-activity-7276544844347461632-F_du?utm_source=share&utm_medium=member_desktop">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/sihfinal.png" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Small Footprints Big Impact</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Dec 18, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">My Journey at Smart India Hackathon 2024</h3>
+
+                  <p class="blog-text">
+                    My complete journey of becoming the Finalist of Smart India Hackathon 2024.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://www.linkedin.com/posts/be-raj-kumar-singh-_bizathon2024-concetto2024-innovation-activity-7259288323989397505-KtOY?utm_source=share&utm_medium=member_desktop">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/bizathon.png" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Ultimate Business Ideathon</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Oct 20, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Bizathon 2.0 at IIT (ISM) Dhanbad</h3>
+
+                  <p class="blog-text">
+                    I participated in Bizathon 2024, a business ideathon, where my team and I developed "Jabari: Beyond
+                    Books Into Life," a innovative education solution.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://www.linkedin.com/posts/be-raj-kumar-singh-_codenerds-samatva2024-competitivecoding-activity-7256725709094559744-7fDZ?utm_source=share&utm_medium=member_desktop">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/samatva.png" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Competitive Programming</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Sept 20, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Champions of Samatva, 2024</h3>
+
+                  <p class="blog-text">
+                    We're thrilled to have won the first prize in the Code Nerds event, thanks to our team's hard work,
+                    dedication, and collaboration.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://www.linkedin.com/posts/be-raj-kumar-singh-_magistech-magistech2k23-runnerup-activity-7131326135912562690-orLk?utm_source=share&utm_medium=member_desktop">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/magistech.png" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Development</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Sept 21, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Runner-up at Code Combat, MAGISTECH 2K23!</h3>
+
+                  <p class="blog-text">
+                    I'm thrilled to have secured the runner-up position at Code Combat, a testament to my dedication and
+                    passion for coding.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://www.linkedin.com/posts/a-unnati-narayan_acmarm2024-tcskolkata-growthmindset-ugcPost-7266536658584395776-h52X?utm_source=share&utm_medium=member_desktop">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/acm1.png" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Expanding Horizons in Tech!</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Nov 23, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Attending ARM 2024</h3>
+
+                  <p class="blog-text">
+                    I recently attended the ACM India East & North-East regional meet at TCS Kolkata, ARM 2024, where I
+                    gained valuable insights from expert sessions and panel discussions.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116803.37516656657!2d88.27734586221827!3d22.57264626635247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277ae7823e26f%3A0x1a789c62a8e34541!2sKolkata%2C%20West%20Bengal%2C%20India!5e0!3m2!1sen!2sus!4v1697542329373!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy" allowfullscreen></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://api.web3forms.com/submit" id="contactForm" class="form" method="POST" data-form>
+
+            <div class="input-wrapper">
+              <input type="hidden" name="access_key" value="e6c5dec3-c009-4aa2-9b48-ba41491d209e">
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
