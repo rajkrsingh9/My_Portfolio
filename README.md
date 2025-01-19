@@ -56,6 +56,9 @@ This portfolio serves as a central hub to:
 ## 📸 Screenshots
 ![my desktop](https://github.com/user-attachments/assets/e438252d-e321-4d86-a6ee-9e27c143fa70)
 
+![View of portfolio](https://github.com/user-attachments/assets/59c123c3-28d3-4247-b0b7-e3e24b7a42f6)
+
+
 
 ---
 
