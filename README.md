@@ -29,14 +29,14 @@ This portfolio serves as a central hub to:
 - **Clean & Responsive Design**: Optimized for viewing on all device sizes.
 - **Project Portfolio**: Detailed list of projects, with descriptions and links to live demos and repositories.
 - **About Me Section**: Highlighting my professional journey, skills, and interests.
-- **Integrated Blog (if applicable)**: Sharing insights and knowledge on various topics.
+- **Integrated Blog**: Sharing insights and knowledge on various topics.
 - **Contact Form**: Easy-to-use contact form to get in touch with me directly.
 
 ---
 
 ## 🛠️ Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
-- **Libraries/Frameworks**: [Optional - Include if you used any CSS framework or JS library]
+- **Tools**: Web3forms
 - **Hosting**: GitHub Pages
 
 ---
