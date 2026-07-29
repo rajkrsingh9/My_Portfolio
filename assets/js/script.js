@@ -1,42 +1,45 @@
 'use strict';
 
 
-
-// splash screen typing animation
 (function initSplashScreen() {
   const splashScreen = document.getElementById('splashScreen');
   const splashName = document.getElementById('splashName');
-  const fullName = 'aj Kumar Singh';
+  const fullName = 'aj Kr. Singh';
   let charIndex = 0;
 
-  // Start typing after "R" animation settles (0.6s for R + 0.2s pause)
+  // Start typing after "R" initial animation finishes
   setTimeout(() => {
     const typingInterval = setInterval(() => {
       if (charIndex < fullName.length) {
         const char = document.createElement('span');
         char.className = 'typing-char';
-        char.textContent = fullName[charIndex];
-        // Remove cursor before adding new char
+        
+        // Preserve space rendering using non-breaking space if needed
+        const currentChar = fullName[charIndex];
+        char.textContent = currentChar === ' ' ? '\u00A0' : currentChar;
+
         const cursor = splashName.querySelector('.cursor-blink');
         if (cursor) cursor.remove();
+
         splashName.appendChild(char);
         charIndex++;
-        // Add cursor back
+
         const newCursor = document.createElement('span');
         newCursor.className = 'cursor-blink';
         splashName.appendChild(newCursor);
       } else {
         clearInterval(typingInterval);
-        // Final cursor blink then remove after fade
+        
+        // Keep cursor blinking briefly after typing finishes, then remove before burst
         setTimeout(() => {
           const cursor = splashName.querySelector('.cursor-blink');
-          if (cursor) cursor.remove();
-        }, 800);
+          if (cursor) cursor.style.opacity = '0';
+        }, 500);
       }
-    }, 80);
-  }, 800);
+    }, 70);
+  }, 600);
 
-  // Remove splash screen from DOM after animation completes
+  // Remove element completely after burst animation finishes (2.8s delay + 0.7s duration)
   setTimeout(() => {
     if (splashScreen) {
       splashScreen.remove();
