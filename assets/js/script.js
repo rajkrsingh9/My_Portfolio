@@ -2,6 +2,50 @@
 
 
 
+// splash screen typing animation
+(function initSplashScreen() {
+  const splashScreen = document.getElementById('splashScreen');
+  const splashName = document.getElementById('splashName');
+  const fullName = 'aj Kumar Singh';
+  let charIndex = 0;
+
+  // Start typing after "R" animation settles (0.6s for R + 0.2s pause)
+  setTimeout(() => {
+    const typingInterval = setInterval(() => {
+      if (charIndex < fullName.length) {
+        const char = document.createElement('span');
+        char.className = 'typing-char';
+        char.textContent = fullName[charIndex];
+        // Remove cursor before adding new char
+        const cursor = splashName.querySelector('.cursor-blink');
+        if (cursor) cursor.remove();
+        splashName.appendChild(char);
+        charIndex++;
+        // Add cursor back
+        const newCursor = document.createElement('span');
+        newCursor.className = 'cursor-blink';
+        splashName.appendChild(newCursor);
+      } else {
+        clearInterval(typingInterval);
+        // Final cursor blink then remove after fade
+        setTimeout(() => {
+          const cursor = splashName.querySelector('.cursor-blink');
+          if (cursor) cursor.remove();
+        }, 800);
+      }
+    }, 80);
+  }, 800);
+
+  // Remove splash screen from DOM after animation completes
+  setTimeout(() => {
+    if (splashScreen) {
+      splashScreen.remove();
+    }
+  }, 3500);
+})();
+
+
+
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
