@@ -63,6 +63,24 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 
 
+// about text "read more" toggle variables
+const aboutText = document.querySelector(".about-text");
+const aboutReadMoreBtn = document.querySelector("[data-about-read-more]");
+const aboutReadMoreText = aboutReadMoreBtn ? aboutReadMoreBtn.querySelector(".about-read-more-text") : null;
+
+if (aboutReadMoreBtn) {
+  aboutReadMoreBtn.addEventListener("click", function () {
+
+    const isExpanded = aboutText.classList.toggle("expanded");
+
+    aboutReadMoreText.textContent = isExpanded ? "Read Less" : "Read More";
+    aboutReadMoreBtn.setAttribute("aria-expanded", isExpanded);
+
+  });
+}
+
+
+
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
