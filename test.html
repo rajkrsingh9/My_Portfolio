@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aksharum Splash Screen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #373f47;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .splash-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* 3. Logo Icon Animation */
+    .logo-icon {
+      width: 160px;
+      height: 160px;
+      opacity: 0;
+      transform: scale(0) translateY(20px);
+      animation: popUp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      animation-delay: 1.5s;
+    }
+
+    .logo-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Brand Text Wrapper */
+    .brand-text {
+      display: flex;
+      align-items: baseline;
+      gap: 2px;
+    }
+
+    /* 1. Custom 'A' Vector Animation */
+    .letter-a-svg {
+      height: 52px; /* Matches font sizing */
+      width: auto;
+      fill: #7c5fd6;
+      opacity: 0;
+      transform: scale(0);
+      animation: popUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      animation-delay: 0.2s;
+    }
+
+    /* 2. 'ksharum' Text Animation */
+    .rest-text {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #7c5fd6;
+      letter-spacing: -0.02em;
+      opacity: 0;
+      transform: translateX(-15px);
+      animation: slideIn 0.6s ease-out forwards;
+      animation-delay: 0.8s;
+    }
+
+    /* Animations */
+    @keyframes popUp {
+      0% {
+        opacity: 0;
+        transform: scale(0) translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-15px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="splash-container">
+    <!-- Step 3: Logo Icon Pops Up -->
+    <div class="logo-icon">
+      <!-- Replace with your logo icon image path -->
+      <img src="Aksharum_LOgo.png" alt="Aksharum Logo">
+    </div>
+
+    <!-- Brand Text Container -->
+    <div class="brand-text">
+      <!-- Step 1: Exact Stylized Letter 'A' SVG -->
+      <img src="A_Aksharum.png" alt="Stylized A" class="letter-a-svg" />
+
+      <!-- Step 2: "ksharum" Text -->
+      <span class="rest-text">ksharum</span>
+    </div>
+  </div>
+
+</body>
+<script>
+
+    import React from 'react';
+import { motion } from 'framer-motion';
+
+export default function SplashScreen() {
+  const brandColor = "#7c5fd6";
+
+  const letterAVariants = {
+    hidden: { scale: 0, opacity: 0 },
+    visible: { 
+      scale: 1, 
+      opacity: 1, 
+      transition: { type: "spring", stiffness: 300, damping: 15, delay: 0.2 } 
+    }
+  };
+
+  const textVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { 
+      opacity: 1, 
+      x: 0, 
+      transition: { duration: 0.6, ease: "easeOut", delay: 0.8 } 
+    }
+  };
+
+  const logoVariants = {
+    hidden: { scale: 0, opacity: 0, y: 20 },
+    visible: { 
+      scale: 1, 
+      opacity: 1, 
+      y: 0, 
+      transition: { type: "spring", stiffness: 260, damping: 20, delay: 1.5 } 
+    }
+  };
+
+  return (
+    <div className="fixed inset-0 flex flex-col items-center justify-center bg-slate-50 z-50">
+      <div className="flex flex-col items-center gap-3">
+        
+        {/* Step 3: Logo Icon */}
+        <motion.div
+          variants={logoVariants}
+          initial="hidden"
+          animate="visible"
+          className="w-32 h-32 md:w-40 md:h-40"
+        >
+          <img 
+            src="/logo-icon.png" 
+            alt="Aksharum Logo" 
+            className="w-full h-full object-contain"
+          />
+        </motion.div>
+
+        {/* Text Area */}
+        <div className="flex items-baseline gap-1">
+          {/* Step 1: Custom Stylized 'A' */}
+          <motion.svg
+            variants={letterAVariants}
+            initial="hidden"
+            animate="visible"
+            className="h-12 md:h-16 w-auto"
+            style={{ fill: brandColor }}
+            viewBox="0 0 100 90"
+          >
+            <path d="M12 80 L35 20 C37 15, 42 15, 46 20 L58 50 C62 60, 68 70, 78 72 C85 73, 90 68, 85 60 C80 52, 65 52, 40 52 L22 80 Z M38 36 L28 62 L50 62 Z" />
+          </motion.svg>
+
+          {/* Step 2: "ksharum" */}
+          <motion.span
+            variants={textVariants}
+            initial="hidden"
+            animate="visible"
+            className="text-5xl md:text-6xl font-bold tracking-tight"
+            style={{ color: brandColor, fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+          >
+            ksharum
+          </motion.span>
+        </div>
+
+      </div>
+    </div>
+  );
+}
+</script>
+</html>
