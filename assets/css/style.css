@@ -635,8 +635,8 @@ main {
 
 .navbar-link {
   color: var(--light-gray);
-  font-size: var(--fs-7);
-  padding: 20px 7px;
+  font-size: var(--fs-5);
+  padding: 20px 9px;
   transition: color var(--transition-1);
 }
 
