@@ -68,7 +68,7 @@ This portfolio serves as a central hub to:
 ## 🤝 Contact
 Feel free to reach out for collaboration or inquiries!
 
-📧 Email: rajkrsingh9164@gmail.com
+📧 Email: rajkumarsingh9164@gmail.com
 🌐 Website: [My Portfolio](https://rajkrsingh9.github.io/My_Portfolio/)
 💼 LinkedIn: https://www.linkedin.com/in/be-raj-kumar-singh-
 
