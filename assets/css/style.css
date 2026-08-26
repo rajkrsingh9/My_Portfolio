@@ -319,6 +319,23 @@ body { background: var(--smoky-black); }
 
 
 
+/*-----------------------------------*\
+  #BUBBLES BACKGROUND
+\*-----------------------------------*/
+
+#bubbles-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #bubbles-canvas { display: none; }
+}
+
 
 /*-----------------------------------*\
   #REUSED STYLE
