@@ -872,6 +872,49 @@ main {
 
 
 /**
+ * #scroll arrows
+ */
+
+.scroll-list-wrapper { position: relative; }
+
+.scroll-arrow-btn {
+  position: absolute;
+  top: calc(50% - 17px);
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--eerie-black-1);
+  border: 1px solid var(--jet);
+  border-radius: 50%;
+  color: var(--orange-yellow-crayola);
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: var(--shadow-1);
+  z-index: 2;
+  transition: var(--transition-1);
+}
+
+.scroll-arrow-btn:hover {
+  background: var(--jet);
+  color: var(--white-2);
+}
+
+.scroll-arrow-btn:active { transform: translateY(-50%) scale(0.92); }
+
+.scroll-arrow-btn[disabled] {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+.scroll-arrow-left { left: -6px; }
+.scroll-arrow-right { right: -6px; }
+
+
+/**
  * #testimonials-modal
  */
 

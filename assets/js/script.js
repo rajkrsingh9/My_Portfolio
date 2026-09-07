@@ -120,6 +120,40 @@ overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
+// scroll-arrow variables
+const scrollWrappers = document.querySelectorAll("[data-scroll-wrapper]");
+
+// wire up prev/next arrow buttons for each scrollable list
+scrollWrappers.forEach(function (wrapper) {
+
+  const list = wrapper.querySelector("[data-scroll-list]");
+  const prevBtn = wrapper.querySelector("[data-scroll-prev]");
+  const nextBtn = wrapper.querySelector("[data-scroll-next]");
+
+  if (!list || !prevBtn || !nextBtn) return;
+
+  const updateArrowState = function () {
+    const maxScrollLeft = list.scrollWidth - list.clientWidth - 1;
+    prevBtn.toggleAttribute("disabled", list.scrollLeft <= 0);
+    nextBtn.toggleAttribute("disabled", list.scrollLeft >= maxScrollLeft);
+  };
+
+  const scrollByStep = function (direction) {
+    list.scrollBy({ left: direction * list.clientWidth * 0.8, behavior: "smooth" });
+  };
+
+  prevBtn.addEventListener("click", function () { scrollByStep(-1); });
+  nextBtn.addEventListener("click", function () { scrollByStep(1); });
+
+  list.addEventListener("scroll", updateArrowState);
+  window.addEventListener("resize", updateArrowState);
+
+  updateArrowState();
+
+});
+
+
+
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
